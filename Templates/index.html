@@ -9,24 +9,24 @@
 <body class="bg-light">
     <div class="container mt-5">
         <div class="card shadow-lg p-4" style="max-width: 500px; margin: auto;">
-            <h1 class="text-center text-primary">Upload an Image for Prediction</h1>
-            <p class="text-center text-muted">Choose an image file (PNG, JPG, or JPEG) and click "Upload" to receive predictions.</p>
+            <h1 class="text-center" style="color: #428b50;">Upload an Image for Prediction</h1>
+            <p class="text-center" style="color: #428b50;">Choose an image file (PNG, JPG, or JPEG) and click "Upload" to receive predictions.</p>
             
             <form action="{{ url_for('prediction_plant') }}" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <label for="file" class="form-label">
+                    <label for="file" class="form-label" style="color: #428b50;">
                         <i class="fas fa-upload"></i> Select Image
                     </label>
                     <input type="file" name="file" class="form-control" accept=".png,.jpg,.jpeg" required>
                 </div>
                 
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary btn-lg">
+                    <button type="submit" class="btn btn-success btn-lg" style="background-color: #428b50; border-color: #428b50;">
                         <i class="fas fa-paper-plane"></i> Upload
                     </button>
                 </div>
                 <div class="text-center mt-3">
-                    <p><i class="fas fa-arrow-left"></i> <a href="{{ url_for('home') }}">Back to Home</a></p>
+                    <p style="color: #428b50;"><i class="fas fa-arrow-left"></i> <a href="{{ url_for('home') }}" style="color: #428b50;">Back to Home</a></p>
                 </div>
             </form>
         </div>

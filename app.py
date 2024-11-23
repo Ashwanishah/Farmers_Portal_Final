@@ -21,7 +21,6 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
-#model = joblib.load('Plant_disease/model.joblib')
 model_disease = joblib.load('Plant_disease/model.pkl')
 
 model=joblib.load("Fertilizer Prediction/model.joblib")
@@ -39,6 +38,8 @@ def preprocess_image(img_path,target_size=(128,128,3)):
     return img_array
 
 @app.route("/")
+def next():
+    return render_template('next.html')
 @app.route("/home")
 def home():
     return render_template("home.html",title="Home")
