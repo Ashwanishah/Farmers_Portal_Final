@@ -1,4 +1,3 @@
-
 from forms.forms_fertilizer import InputFormFertilizer
 from forms.forms_crop import InputFormCrop
 from forms.forms_presdicities import InputFormPresdicities

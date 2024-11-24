@@ -8,7 +8,21 @@
 </head>
 <body>
     <!-- Header Section with Background Image -->
-    <header class="hero" style="background-image: url('{{ url_for('static', filename='img/header-bg.jpg') }}'); background-size: cover; background-position: center; height: 100vh; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+    <header class="hero">
+        <style>
+        .hero {
+            background-image: url('{{ url_for('static', filename='img/header-bg.jpg') }}');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        </style>
         <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
             <h1 style="padding: 50px;">A smart AI tool for<br>better farming and <span style="color: #ffc107;">Healthier </span>crops</h1>
             <a href="{{ url_for('home') }}" class="btn" style="margin-top: 20px; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px; font-size: 1.2rem; transition: background-color 0.3s ease;">Discover More</a>
