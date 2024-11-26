@@ -153,5 +153,3 @@ def prediction_plant():
         return render_template('result.html', prediction=predicted_label, image_url=image_url)
     return redirect(url_for('index'))
 
-if __name__=="__main__":
-    app.run(debug=True)
